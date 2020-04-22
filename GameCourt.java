@@ -1,9 +1,3 @@
-/**
- * CIS 120 Game HW
- * (c) University of Pennsylvania
- * @version 2.1, Apr 2017
- */
-
 import java.awt.*;
 
 import java.awt.event.*;
@@ -77,7 +71,7 @@ public class GameCourt extends JPanel {
                 tick();
             }
         });
-        timer.start(); // MAKE SURE TO START THE TIMER!
+        timer.start();
 
         // Enable keyboard focus on the court area.
         // When this component has the keyboard focus, key events are handled by its key listener.
@@ -92,10 +86,6 @@ public class GameCourt extends JPanel {
                     paddle.setVx(-PADDLE_VELOCITY);
                 } else if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
                     paddle.setVx(PADDLE_VELOCITY);
-//                } else if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-//                    paddle.setVy(PADDLE_VELOCITY);
-//                } else if (e.getKeyCode() == KeyEvent.VK_UP) {
-//                    paddle.setVy(-PADDLE_VELOCITY);
                 }
             }
 
@@ -122,7 +112,6 @@ public class GameCourt extends JPanel {
     	score.setText("Score: " + currScore);
     	
     	paddle = new Paddle(COURT_WIDTH, COURT_HEIGHT, Color.WHITE);
-        //poison = new Poison(COURT_WIDTH, COURT_HEIGHT);
         for(int row = 0; row < bricks.length; row++) {
     		for(int col = 0; col < bricks[0].length; col++) {
     			if(col == 9 && row == 5 || col == 0 && row == 5 ) {
