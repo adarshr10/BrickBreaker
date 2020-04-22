@@ -4,7 +4,6 @@ public class ExplodingBricks extends Bricks {
 
 	public ExplodingBricks(int courtWidth, int courtHeight, Color color, int state) {
 		super(courtWidth, courtHeight, color, state);
-		// TODO Auto-generated constructor stub
 	}
 	
 	@Override
