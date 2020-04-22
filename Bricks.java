@@ -1,15 +1,5 @@
-/**
- * CIS 120 Game HW
- * (c) University of Pennsylvania
- * @version 2.1, Apr 2017
- */
-
 import java.awt.*;
 
-/**
- * A basic game object starting in the upper left corner of the game court. It is displayed as a
- * circle of a specified color.
- */
 public class Bricks extends GameObj implements Comparable {
 	public static final int WIDTH = 80;
     public static final int HEIGHT = 30;
