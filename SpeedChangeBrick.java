@@ -7,7 +7,6 @@ public class SpeedChangeBrick extends Bricks {
 	
 	public SpeedChangeBrick(int courtWidth, int courtHeight, Color color, int state) {
 		super(courtWidth, courtHeight, color, state);
-		// TODO Auto-generated constructor stub
 		rand = new Random();
 	}
 	
